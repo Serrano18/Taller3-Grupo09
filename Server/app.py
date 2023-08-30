@@ -155,8 +155,8 @@ def create_user_table() :
         conn = psycopg2.connect(
             host="db",
             database="usuarios",
-            user="postgres",
-            password="postgres"
+            user="admin",
+            password="admin"
         )
         cursor = conn.cursor()
         cursor.execute(
